@@ -1,10 +1,11 @@
 # Build stage
 FROM node:lts-alpine AS builder
 
+USER root
+RUN npm install -g pnpm
+
 USER node
 WORKDIR /home/node
-
-RUN npm install -g pnpm
 
 COPY package.json pnpm-lock.yaml ./
 

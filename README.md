@@ -44,15 +44,16 @@ pnpm start
 List of available endpoints
 
 ### API Endpoints
-Franchise Endpoints
+
+#### Franchise Endpoints
 - POST /franchises: Create a new franchise.
 - GET /franchises: List all franchises.
 
-### Branch Endpoints
+#### Branch Endpoints
 - POST /franchises/:franchiseId/branches: Add a branch to a franchise.
 - GET /franchises/:franchiseId/branches: List branches for a franchise.
 
-### Product Endpoints
+#### Product Endpoints
 - POST /branches/:branchId/products: Add a product to a branch.
 - DELETE /products/:productId: Delete a product from a branch.
 - PUT /products/:productId/stock: Update product stock.
