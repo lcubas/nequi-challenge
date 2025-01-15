@@ -13,7 +13,7 @@ COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 
 COPY --chown=node:node . .
-RUN pnpm run build && pnpm prune --omit=dev
+RUN pnpm run build && pnpm prune --prod
 
 
 # Final run stage
