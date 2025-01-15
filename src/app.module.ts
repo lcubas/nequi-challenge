@@ -4,6 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmConfigService } from './shared/services/typeorm-config.service';
+import { FranchiseModule } from './franchise/franchise.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { TypeOrmConfigService } from './shared/services/typeorm-config.service';
       imports: [ConfigModule],
       useClass: TypeOrmConfigService,
     }),
+    FranchiseModule,
   ],
   controllers: [AppController],
   providers: [AppService],
