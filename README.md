@@ -2,6 +2,8 @@
 
 This is a simple and practical project for the Nequi challenge.
 
+Production deployment: [https://willing-karry-vitos-a8724351.koyeb.app/](https://willing-karry-vitos-a8724351.koyeb.app/)
+
 ## Requirements
 
 - Node.js
